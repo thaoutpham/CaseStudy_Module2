@@ -1,7 +1,10 @@
-public class Music {
+import java.io.Serializable;
+
+public class Music implements Serializable {
     int id;
     String name;
     String singer;
+    String album;
 
     public Music(){}
 
@@ -9,6 +12,14 @@ public class Music {
         this.id = id;
         this.name = name;
         this.singer = singer;
+    }
+
+    public String getAlbum() {
+        return album;
+    }
+
+    public void setAlbum(String album) {
+        this.album = album;
     }
 
     public int getId() {
