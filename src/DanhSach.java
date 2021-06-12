@@ -11,4 +11,6 @@ public interface DanhSach {
     void removeName(String name);
     void editId(int id, Music music);
     void editName(String name, Music music);
+    void writeToFile();
+    void readToFile();
 }

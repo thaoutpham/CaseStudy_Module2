@@ -1,4 +1,5 @@
 import java.sql.SQLOutput;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -86,6 +87,8 @@ public class Main {
             System.out.println("3. Xóa bài hát");
             System.out.println("4. Hiển thị danh sách");
             System.out.println("5. Tìm kiếm bài hát");
+            System.out.println("6. Lưu vào File");
+            System.out.println("7. Đọc từ File");
             System.out.println("0 Thoát");
             int number= scanner.nextInt();
             switch (number){
@@ -188,6 +191,11 @@ public class Main {
                             break;
                     }
                     break;
+                case 6:
+                    manageMusic.writeToFile();
+                    break;
+                case 7:
+                    manageMusic.readToFile();
             }
         }
 

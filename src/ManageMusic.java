@@ -78,5 +78,23 @@ public class ManageMusic implements DanhSach {
         }
     }
 
+    @Override
+    public void writeToFile() {
+        try {
+            ManageFile.writeFile(this.musicList);
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+        System.out.println("Lưu File thành công");
+    }
+
+    @Override
+    public void readToFile() {
+        try {
+            ManageFile.readFile();
+        } catch (IOException exception) {
+            exception.printStackTrace();
+        }
+    }
 
 }

@@ -38,6 +38,6 @@ public class Music implements Serializable {
 
     @Override
     public String toString() {
-        return "Music{ " +"  Mã số bài hát: "+ id +",       " +"Tên bài hát: "+ name +",       "+"Tên ca sĩ"+ singer +".}";
+        return "Music{ " +"  Mã số bài hát: "+ id +",       " +"Tên bài hát: "+ name +",       "+"Tên ca sĩ: "+ singer +"}";
     }
 }
